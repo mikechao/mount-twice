@@ -1,8 +1,8 @@
 <script setup lang="ts">
+const layout = inject('layout')
 
 onMounted(() => {
-
-  console.log('custom onMounted called ')
+  console.log(`custom onMounted called with layout ${layout}`)
 })
 
 onUpdated(() => {
