@@ -1,11 +1,11 @@
 <script setup lang="ts">
 
 onMounted(() => {
-  console.log('onMounted called')
+  console.log('index onMounted called')
 })
 
 onUpdated(() => {
-  console.log('onUpdated called')
+  console.log('index onUpdated called')
 })
 </script>
 <template>

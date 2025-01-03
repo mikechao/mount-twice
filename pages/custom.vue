@@ -1,14 +1,16 @@
 <script setup lang="ts">
 
 onMounted(() => {
-  console.log('onMounted called')
+
+  console.log('custom onMounted called ')
 })
 
 onUpdated(() => {
-  console.log('onUpdated called')
+  console.log('custom onUpdated called')
 })
+
 </script>
 <template>
-  <p>Custom</p>
+  <p>Custom.</p>
   <NuxtLink to="/">To index</NuxtLink>
 </template>
