@@ -1,5 +1,4 @@
 <script setup lang="ts">
-  provide('layout', 'custom')
 </script>
 <template>
   <div>

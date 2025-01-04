@@ -1,8 +1,8 @@
 <script setup lang="ts">
-const layout = inject('layout')
+const layout = useState('layout')
 
 onMounted(() => {
-  console.log(`index onMounted called with layout ${layout}`)
+  console.log(`index onMounted called with layout ${layout.value}`)
 })
 
 onUpdated(() => {
