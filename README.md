@@ -1,6 +1,11 @@
-# Nuxt Minimal Starter
+# onMounted lifecycle hooked called twice
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Just a simple reproduction of an issue I ran into.
+
+The onMounted lifecycle hook was being called twice when I was using a computed property to define the layout 
+that was bound to the name property on NuxtLayout in app.vue
+
+The fix is to use middleware (00.layout.global.ts) to set the layout for the pages
 
 ## Setup
 
